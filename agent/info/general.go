@@ -1,15 +1,15 @@
-package main
+package info
 
 import (
 	"fmt"
 	"os"
 )
 
-func main() {
+func GetHostname() string {
 	hostname, err := os.Hostname()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	fmt.Printf("ShyGuy initialized on %s.", hostname)
+	return hostname
 }
