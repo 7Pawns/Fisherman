@@ -14,7 +14,7 @@ func (bait Bait) NewBait() {
 }
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
-	log.Println("Hello Bait!\n")
+	log.Println("Hello Bait!")
 }
 
 func (bait Bait) StartListen() {
