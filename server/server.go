@@ -1,7 +1,7 @@
 package server
 
 import (
-	"ShyGuy/server/baits"
+	"Fisherman/server/baits"
 )
 
 func Setup() {
