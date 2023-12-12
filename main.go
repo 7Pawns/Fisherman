@@ -8,7 +8,7 @@ import (
 
 func main() {
 	hostname := info.GetHostname()
-	fmt.Printf("ShyGuy initialized on %s.", hostname)
+	fmt.Printf("ShyGuy initialized on %s.\n", hostname)
 
 	server.Setup()
 }
