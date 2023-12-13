@@ -1,11 +1,10 @@
 package server
 
 import (
-	"Fisherman/server/baits"
+	"Fisherman/server/hooks"
 )
 
 func Setup() {
-	bait := baits.Bait{}
-	bait.NewBait()
-	bait.StartListen()
+	hook := hooks.Hook{}
+	hook.StartListen()
 }
