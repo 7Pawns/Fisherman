@@ -12,17 +12,17 @@ func checkError(e error) {
 }
 
 type Bait struct {
-	scriptPath string
+	path string
 }
 
 func NewBait(scriptPath string) *Bait {
 	bait := new(Bait)
-	bait.scriptPath = scriptPath
+	bait.path = scriptPath
 	return bait
 }
 
-func (bait Bait) GetBaitScript(params ...any) string {
-	script, err := os.ReadFile(bait.scriptPath)
+func (bait Bait) BaitToString(params ...any) string {
+	script, err := os.ReadFile(bait.path)
 	checkError(err)
 
 	scriptFmt := string(script)
