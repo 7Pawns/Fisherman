@@ -1,2 +1,2 @@
 # Fisherman
-Command & Control Tool
+C2 Framework only found in the deep seas
